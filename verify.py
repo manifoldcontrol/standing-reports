@@ -25,6 +25,36 @@ def fail(msg):
     sys.exit(1)
 
 
+def verify_bracket(d, manifest, committed):
+    """bracket-certificate-v0: exact-arithmetic recomposition, no Arb needed."""
+    from engine.bh_certificate import verify_manifest, dec
+    recorded_hash = manifest.get("manifest_sha256")
+    body = dict(manifest)
+    body.pop("manifest_sha256", None)
+    actual = "sha256:" + hashlib.sha256(
+        json.dumps(body, sort_keys=True).encode()).hexdigest()
+    if recorded_hash and actual != recorded_hash:
+        fail("manifest bytes do not match the embedded hash")
+    v = verify_manifest(manifest)
+    recomputed = {"schema": manifest["schema"], "subject": manifest["subject"],
+                  "manifest_sha256": actual,
+                  "accepted": v.accepted, "bins": v.bins,
+                  "total_lower_decimal": dec(v.total_lower) if v.total_lower is not None else None,
+                  "exceeds_paper_threshold": v.exceeds_threshold,
+                  "exceeds_alpha": v.exceeds_alpha}
+    diffs = [k for k in sorted(set(committed) | set(recomputed))
+             if committed.get(k) != recomputed.get(k)]
+    if diffs:
+        for k in diffs:
+            print(f"  field {k!r}:\n    committed:  {committed.get(k)}\n    recomputed: {recomputed.get(k)}")
+        fail(f"{len(diffs)} verdict field(s) differ")
+    print("OK: verdict replays exactly from the evidence")
+    print(f"    subject   {manifest['subject']}")
+    print(f"    certified total lower bound {recomputed['total_lower_decimal'][:41]}...")
+    print(f"    exceeds alpha 1/100: {recomputed['exceeds_alpha']}")
+    sys.exit(0)
+
+
 def main():
     if len(sys.argv) != 2:
         print(__doc__)
@@ -32,6 +62,8 @@ def main():
     d = sys.argv[1].rstrip("/\\")
     manifest = json.load(open(os.path.join(d, "manifest.json"), encoding="utf-8-sig"))
     committed = json.load(open(os.path.join(d, "verdict.json"), encoding="utf-8"))
+    if manifest.get("schema") == "bracket-certificate-v0":
+        verify_bracket(d, manifest, committed)
     raw_map = json.load(open(os.path.join(d, "claim_map.json"), encoding="utf-8"))
 
     expected_map_id = raw_map.pop("map_id")

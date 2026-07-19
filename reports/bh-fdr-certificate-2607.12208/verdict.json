@@ -1,0 +1,10 @@
+{
+  "schema": "bracket-certificate-v0",
+  "subject": "arXiv:2607.12208",
+  "manifest_sha256": "sha256:9190ddf4c2063c5f38b2c8f494c041586a16702764ef7158c3381c40e17fb3b7",
+  "accepted": true,
+  "bins": 1000,
+  "total_lower_decimal": "0.010416829070473713117472566385250491510395310",
+  "exceeds_paper_threshold": true,
+  "exceeds_alpha": true
+}

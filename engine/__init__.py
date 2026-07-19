@@ -1,6 +1,5 @@
-"""Frozen evaluation engine for standing reports.
+"""Frozen evaluation engine for standing reports (frozen 2026-07-18).
 
-Vendored from the source system at corpus commit 3c31545 (2026-07-18).
-A standing report must replay against the engine version it ships with;
-this copy is part of the report set's evidence, not a live dependency.
+A standing report replays against the engine version it ships with. This
+copy is part of the report set's evidence.
 """
