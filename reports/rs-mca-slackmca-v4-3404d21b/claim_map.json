@@ -1,0 +1,147 @@
+{
+  "project": "rs-mca-slackmca-v4",
+  "authors": [
+    "aristotle",
+    "codex"
+  ],
+  "obligations": {
+    "locator_basics": [
+      "lean_kernel",
+      "required"
+    ],
+    "monomial_fiber_injection": [
+      "lean_kernel",
+      "required"
+    ],
+    "pigeonhole_lower_bound": [
+      "lean_kernel",
+      "required"
+    ],
+    "antipodal_identity": [
+      "lean_kernel",
+      "required"
+    ],
+    "quotient_core_obstruction": [
+      "lean_kernel",
+      "required"
+    ],
+    "inverse_quotient": [
+      "lean_kernel",
+      "required"
+    ],
+    "charzero_fiber_poly": [
+      "lean_kernel",
+      "required"
+    ],
+    "entropy_lower": [
+      "lean_kernel",
+      "required"
+    ],
+    "cyclotomic_rigidity": [
+      "lean_kernel",
+      "required"
+    ],
+    "fermat_rigidity": [
+      "lean_kernel",
+      "required"
+    ],
+    "one_bad_parameter": [
+      "lean_kernel",
+      "required"
+    ],
+    "manuscript_adequacy": [
+      "semantic_adequacy",
+      "required"
+    ],
+    "release_replay": [
+      "release_replay",
+      "required"
+    ],
+    "external_expert_review": [
+      "independent_expert_review",
+      "required"
+    ]
+  },
+  "claims": {
+    "part_one_entropy_claim": [
+      "locator_basics",
+      "monomial_fiber_injection",
+      "pigeonhole_lower_bound",
+      "antipodal_identity",
+      "quotient_core_obstruction",
+      "inverse_quotient",
+      "charzero_fiber_poly",
+      "entropy_lower",
+      "manuscript_adequacy",
+      "release_replay"
+    ],
+    "part_two_rigidity_claim": [
+      "antipodal_identity",
+      "cyclotomic_rigidity",
+      "fermat_rigidity",
+      "one_bad_parameter",
+      "manuscript_adequacy",
+      "release_replay"
+    ],
+    "external_validation_claim": [
+      "part_one_entropy_claim",
+      "part_two_rigidity_claim",
+      "external_expert_review"
+    ]
+  },
+  "claim_order": [
+    "part_one_entropy_claim",
+    "part_two_rigidity_claim",
+    "external_validation_claim"
+  ],
+  "claim_standing": {
+    "part_one_entropy_claim": "release_verified",
+    "part_two_rigidity_claim": "release_verified",
+    "external_validation_claim": "externally_validated"
+  },
+  "decl_obligations": {
+    "locator_basics": [
+      "locator_injective",
+      "eval_locator_mem"
+    ],
+    "monomial_fiber_injection": [
+      "PS_mem_codeList",
+      "PS_injOn"
+    ],
+    "pigeonhole_lower_bound": [
+      "pigeonhole_lower"
+    ],
+    "antipodal_identity": [
+      "antipodal"
+    ],
+    "quotient_core_obstruction": [
+      "quotient_core_lower"
+    ],
+    "inverse_quotient": [
+      "inverse_quotient"
+    ],
+    "charzero_fiber_poly": [
+      "charZeroFiber_card_le"
+    ],
+    "entropy_lower": [
+      "entropy_lower"
+    ],
+    "cyclotomic_rigidity": [
+      "rigid_cyclo"
+    ],
+    "fermat_rigidity": [
+      "signed_binary_zero",
+      "rigid_fermat"
+    ],
+    "one_bad_parameter": [
+      "mca_onez"
+    ]
+  },
+  "kernel_source_suffix": "slackMCA_v4/Main.lean",
+  "clean_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "map_id": "claimmap_d58819dd2f37"
+}

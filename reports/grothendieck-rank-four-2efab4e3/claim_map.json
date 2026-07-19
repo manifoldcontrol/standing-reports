@@ -1,0 +1,136 @@
+{
+  "project": "grothendieck-rank-four",
+  "authors": [
+    "codex",
+    "claude"
+  ],
+  "obligations": {
+    "R_presentation": [
+      "lean_kernel",
+      "required"
+    ],
+    "A_finrank_4": [
+      "lean_kernel",
+      "required"
+    ],
+    "bialgebra": [
+      "lean_kernel",
+      "required"
+    ],
+    "hopf_antipode": [
+      "lean_kernel",
+      "required"
+    ],
+    "power_word_4_and_8": [
+      "lean_kernel",
+      "required"
+    ],
+    "noncocommutativity": [
+      "lean_kernel",
+      "required"
+    ],
+    "macaulay2_identities": [
+      "computer_algebra",
+      "corroborating"
+    ],
+    "group_scheme_translation": [
+      "lean_kernel",
+      "required"
+    ],
+    "categorical_power_map": [
+      "lean_kernel",
+      "required"
+    ],
+    "manuscript_adequacy": [
+      "semantic_adequacy",
+      "required"
+    ],
+    "literature_novelty": [
+      "literature_review",
+      "required"
+    ],
+    "external_expert_review": [
+      "independent_expert_review",
+      "required"
+    ],
+    "release_replay": [
+      "release_replay",
+      "required"
+    ]
+  },
+  "claims": {
+    "hopf_counterexample_claim": [
+      "R_presentation",
+      "A_finrank_4",
+      "bialgebra",
+      "hopf_antipode",
+      "power_word_4_and_8",
+      "noncocommutativity",
+      "macaulay2_identities",
+      "manuscript_adequacy",
+      "release_replay"
+    ],
+    "group_scheme_counterexample_claim": [
+      "hopf_counterexample_claim",
+      "group_scheme_translation",
+      "categorical_power_map",
+      "release_replay"
+    ],
+    "historical_novelty_claim": [
+      "group_scheme_counterexample_claim",
+      "literature_novelty"
+    ],
+    "external_validation_claim": [
+      "group_scheme_counterexample_claim",
+      "external_expert_review"
+    ]
+  },
+  "claim_order": [
+    "hopf_counterexample_claim",
+    "group_scheme_counterexample_claim",
+    "external_validation_claim"
+  ],
+  "claim_standing": {
+    "hopf_counterexample_claim": "release_verified",
+    "group_scheme_counterexample_claim": "release_verified",
+    "historical_novelty_claim": "priority_supported",
+    "external_validation_claim": "externally_validated"
+  },
+  "decl_obligations": {
+    "R_presentation": [
+      "two_b_ne_zero"
+    ],
+    "A_finrank_4": [
+      "finrank_A"
+    ],
+    "bialgebra": [
+      "comul_U",
+      "comul_v"
+    ],
+    "hopf_antipode": [
+      "instHopfAlgebra"
+    ],
+    "power_word_4_and_8": [
+      "powerMap_four_U_ne_zero",
+      "powerMap_four_v",
+      "powerMap_eight",
+      "universalPoint_pow_eight"
+    ],
+    "group_scheme_translation": [
+      "coordinateHopfAlgebra"
+    ],
+    "noncocommutativity": [
+      "not_isCocomm"
+    ],
+    "categorical_power_map": [
+      "monPowMap_affineGroupScheme_four_ne"
+    ]
+  },
+  "kernel_source_suffix": "GrothendieckCounterexample.lean",
+  "clean_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "map_id": "claimmap_246c7652800c"
+}

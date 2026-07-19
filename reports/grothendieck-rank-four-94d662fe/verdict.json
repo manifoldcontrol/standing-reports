@@ -1,0 +1,121 @@
+{
+  "project": "grothendieck-rank-four",
+  "claim_map_id": "claimmap_246c7652800c",
+  "commit": "94d662fee6ddf6806d425c93c2ed8239e3f90463",
+  "snapshot_id": "snap_364c3ef3ab97",
+  "evidence_origin": "extracted",
+  "policy_id": "policy_08a0946eaffe",
+  "standing": "release_verified",
+  "claims": {
+    "hopf_counterexample_claim": {
+      "complete": true,
+      "missing_obligations": [],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ],
+      "standing": "release_verified"
+    },
+    "group_scheme_counterexample_claim": {
+      "complete": true,
+      "missing_obligations": [],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ],
+      "standing": "release_verified"
+    },
+    "historical_novelty_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "literature_novelty"
+      ],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    },
+    "external_validation_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "external_expert_review"
+      ],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    }
+  },
+  "independence": {
+    "execution_paths": 1,
+    "external_expert_paths": 0,
+    "correlated_ai_groups": 1
+  },
+  "flags": [
+    "correlated_ai_review",
+    "external_validation_boundary_open"
+  ],
+  "declarations_observed": [
+    "comul_U",
+    "comul_v",
+    "coordinateHopfAlgebra",
+    "counterexample",
+    "finrank_A",
+    "instHopfAlgebra",
+    "monPowMap_affineGroupScheme_four_ne",
+    "not_isCocomm",
+    "orderOf_universalPoint",
+    "powerMap_eight",
+    "powerMap_four_U_ne_zero",
+    "powerMap_four_v",
+    "two_b_ne_zero",
+    "universalPoint_pow_eight"
+  ],
+  "kernel_closure": {
+    "A_finrank_4": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "R_presentation": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "bialgebra": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "categorical_power_map": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "group_scheme_translation": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "hopf_antipode": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "noncocommutativity": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "power_word_4_and_8": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    }
+  },
+  "axioms_report_hash": "sha256:882cb1ca5f8992ab711ef7fc72f880b1c011a2f48fc5469086ad217f8127ce44"
+}

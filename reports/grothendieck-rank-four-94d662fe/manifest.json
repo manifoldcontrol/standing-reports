@@ -1,0 +1,37 @@
+﻿{
+  "commit": "94d662fee6ddf6806d425c93c2ed8239e3f90463",
+  "toolchain_id": "leanprover/lean4:v4.31.0",
+  "mathlib_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "lake_manifest_hash": "A21A63BABD94AC505239ABC03EF9F4498FA8782A018DA02E55F1ABA447E68390",
+  "source_hashes": {
+    "FiniteFlatGroupSchemes.lean": "7DD200DB1777C109E6AED3731E065953539C21974B80223310E6571873E05B43",
+    "FiniteFlatGroupSchemes/ConvolutionPower.lean": "2189510C6FAF0AEFA5DC377B382B174D445F5A86E1D5A694E6FB535486BB6731",
+    "FiniteFlatGroupSchemes/GrothendieckCounterexample.lean": "CE9BCF3BEF4FEF2DDE071DE0DCA689F18EF935A2B4408D42C559E222D5F86631",
+    "FiniteFlatGroupSchemes/GrothendieckCounterexampleAllPrimes.lean": "0C64257EA1935B31F4F7A8BBE9417532CF5961ECB5681F4F68F70AB2AE8A3EB0"
+  },
+  "lean": {
+    "built": true,
+    "layout": "nested",
+    "module": "FiniteFlatGroupSchemes.GrothendieckCounterexample",
+    "axioms_report": "later_report.txt",
+    "driver": "axioms_later.lean",
+    "axioms_report_sha256": "E89A1F5DA41A751047DA5E81C0DD16F24C4E5F6EF501840152DBD8BFE5CE03BD"
+  },
+  "macaulay2": {
+    "ok": false
+  },
+  "attestations": [
+    {
+      "obligation": "manuscript_adequacy",
+      "checker": "claude-audit",
+      "checker_class": "ai_reviewer",
+      "checker_lineage": [
+        "claude"
+      ],
+      "shared_context": [
+        "grothendieck-repo"
+      ],
+      "statement": "Semantic adequacy review, commit 94d662fe, performed 2026-07-18 against manuscripts/main/A_RANK_FOUR_COUNTEREXAMPLE_TO_GROTHENDIECKS_POWER_QUESTION_2026-07-12.tex (thm:main) and lean/FiniteFlatGroupSchemes/GrothendieckCounterexample.lean. VERIFIED CORRESPONDENCES: base ring R = Z[a,b]/(a^3, b^3, a^2 b + 2) identical to Lean baseIdeal; A = R[U,V]/(U^2 - abU + b^2 V, V^2 - a^2 V) realized by nested QuadraticAlgebra with the same relations; counit(U)=counit(V)=0 and comul U = U(x)1 + lambda(x)U, comul V = V(x)lambda + 1(x)V matching thm:main(3); powerMap n is the n-th convolution power of the identity (universalPoint), the manuscript's n-th power word; powerMap_four_U = 2bW <> 0, powerMap_four_v = 0, powerMap_eight = unit.comp counit matching thm:main(4); antipode = seventh convolution power (instHopfAlgebra); noncommutativity of G expressed as not_isCocomm; the headline `counterexample` (Nontrivial R, Free, Finite, finrank 4, powerMap 4 <> unit.comp counit) expresses 'a finite locally free group scheme of rank four not killed by four', and affineGroupScheme : Grp (CommAlgCat R)op with monPowMap_affineGroupScheme_four_ne supplies the scheme-level reading as a genuine group object via the Hopf/cogroup equivalence. RESIDUALS (auxiliary, not load-bearing for the claim): thm:main(1)'s classification of R as a local Artin complete intersection of length nine with residue field F_2 is not formalized (Lean carries Nontrivial R and 2b <> 0 only); thm:main(5)'s special-fiber identification alpha_2 x alpha_2 is not formalized; the group scheme is a group object in (CommAlgCat R)op rather than a literal Spec construction. None of these weaken the counterexample statement. VERDICT: the Lean statements adequately express the manuscript claim."
+    }
+  ]
+}

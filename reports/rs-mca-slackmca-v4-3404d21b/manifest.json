@@ -1,0 +1,33 @@
+﻿{
+  "commit": "3404d21b64c876c6d9b995ad3e29d7120ab27a54",
+  "toolchain_id": "leanprover/lean4:v4.28.0",
+  "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "lake_manifest_hash": "AA71AE0955875D52FCF6A0EA1E9A3707D4FAB3DB89A41029136C694954EB9BF3",
+  "source_hashes": {
+    "slackMCA_v4.lean": "AA1A9B3B5AD7865B9F2A9EC785F633EF111595C244041A59A03D93BF82BDB68D",
+    "slackMCA_v4/CharZeroFiber.lean": "564F47DB65E6BBC1CB82626AC88FF0BE36DD1579DC011E1B364E2BDB2BD6E4DE",
+    "slackMCA_v4/EntropyLower.lean": "19C360CC266399526B98A18D270A666A91F78611EBF476173D6F84EF8075671B",
+    "slackMCA_v4/Main.lean": "7BDD9329B2EDDB58817462F402BC5E1BCE194EAE9BF33D360BE9E0071952F5A4",
+    "slackMCA_v4/PartII.lean": "C8B4223E84AA69614FBF62643701EE20623327EBF3F485B78C19B6CFE08C8AB0"
+  },
+  "lean": {
+    "built": true,
+    "axioms_report": "slackmca_report.txt",
+    "axioms_report_sha256": "4C21FEC476710A12045354380BE72CAD6A86628A39E78286F45A8A5F83D7B835",
+    "driver": "axioms_slackmca.lean"
+  },
+  "attestations": [
+    {
+      "obligation": "manuscript_adequacy",
+      "checker": "claude-audit",
+      "checker_class": "ai_reviewer",
+      "checker_lineage": [
+        "claude"
+      ],
+      "shared_context": [
+        "rs-mca-repo"
+      ],
+      "statement": "Cross-model semantic adequacy review, rs-mca commit 3404d21b, performed 2026-07-18 (full text: slackmca_pilot/ADEQUACY_REVIEW.md, committed ee5909e). Reviewer lineage claude, independent of the subject's authors (aristotle/Harmonic draft, codex packaging). METHOD: statement-level comparison of tex/slackMCA_v4.tex against the Lean source, definitional roots first. ROOTS VERIFIED: codeList = paper's decoding list at agreement s (deg<k, >=s agreements with the interpolant); Uc = monic monomial-prefix word; esymPrefix = locator coefficients = (-1)^j e_j (the paper's Phi_sigma); MCAbadWitness = standard MCA-bad-with-witness. PER-LABEL: thm:pigeonhole MATCH (division-free C(n,s) <= q^sigma * list); lem:antipodal EXACT; thm:qcore MATCH (same hypotheses M|k, k/M<=n/M-1, 1<=sigma<M); thm:upstairs MATCH at the paper's M0 (inverse_quotient parametrized over 2^(a-1)<=sigma; largest such a yields exactly mu_M0-coset invariance; no cardinality hypothesis needed -- stronger); cor:upstairs-poly MATCH (2^(2^(m-a)) = 2^(n/M0)); cor:entropy-lower MATCH in the clean finitary form C(n,s)^eps <= list; thm:rigidcyclo MATCH over C (equivalent to Z[zeta_N] via the injective embedding); thm:rigidfermat EXACT incl. the signed-binary integer core; thm:onez MATCH for the core uniqueness, arbitrary S; prop:monomial-fiber MATCH (fiber injection). RESIDUALS (none load-bearing for the two mapped claims): thm:upstairs converse not in inverse_quotient; the entropy form 2^(eps n H - o(n)) is the unformalized Stirling rewriting of the formalized bound (package documents this); density sharpening of cor:upstairs-poly not formalized; thm:rigidcyclo's V2/ladder tail and thm:onez's counting consequences not formalized. Divergences are GENERALIZATIONS (arbitrary evaluation sets, arbitrary witness sets) or equivalent settings; no statement found semantically thinned. VERDICT: the Lean statements adequately express the claimed paper labels as scoped by claim map claimmap_d58819dd2f37."
+    }
+  ]
+}

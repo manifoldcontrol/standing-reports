@@ -1,0 +1,124 @@
+{
+  "project": "rs-mca-slackmca-v4",
+  "claim_map_id": "claimmap_d58819dd2f37",
+  "commit": "3404d21b64c876c6d9b995ad3e29d7120ab27a54",
+  "snapshot_id": "snap_d610bf01d3c2",
+  "evidence_origin": "extracted",
+  "policy_id": "policy_08a0946eaffe",
+  "standing": "release_verified",
+  "claims": {
+    "part_one_entropy_claim": {
+      "complete": true,
+      "missing_obligations": [],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ],
+      "standing": "release_verified"
+    },
+    "part_two_rigidity_claim": {
+      "complete": true,
+      "missing_obligations": [],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ],
+      "standing": "release_verified"
+    },
+    "external_validation_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "external_expert_review"
+      ],
+      "evidence_classes": [
+        "lean_kernel",
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    }
+  },
+  "independence": {
+    "execution_paths": 1,
+    "external_expert_paths": 0,
+    "correlated_ai_groups": 0
+  },
+  "flags": [
+    "external_validation_boundary_open"
+  ],
+  "declarations_observed": [
+    "PS_injOn",
+    "PS_mem_codeList",
+    "antipodal",
+    "charZeroFiber_card_le",
+    "entropy_lower",
+    "eval_locator_mem",
+    "inverse_quotient",
+    "locator_injective",
+    "mca_onez",
+    "pigeonhole_lower",
+    "quotient_core_lower",
+    "rigid_cyclo",
+    "rigid_fermat",
+    "signed_binary_zero"
+  ],
+  "kernel_closure": {
+    "antipodal_identity": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "charzero_fiber_poly": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "cyclotomic_rigidity": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "entropy_lower": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "fermat_rigidity": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "inverse_quotient": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "locator_basics": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "monomial_fiber_injection": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "one_bad_parameter": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "pigeonhole_lower_bound": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    },
+    "quotient_core_obstruction": {
+      "closed": true,
+      "missing_declarations": [],
+      "unclean_declarations": []
+    }
+  },
+  "axioms_report_hash": "sha256:710393bc7c5e3046b867ffb4c008d344f8147ca376d3b231a4cfada0ace4e888"
+}

@@ -1,0 +1,23 @@
+﻿{
+    "commit":  "2efab4e3f877851594da5d2af08534182ca33979",
+    "toolchain_id":  "leanprover/lean4:v4.31.0",
+    "mathlib_revision":  "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "lake_manifest_hash":  "A21A63BABD94AC505239ABC03EF9F4498FA8782A018DA02E55F1ABA447E68390",
+    "source_hashes":  {
+                          "FiniteFlatGroupSchemes.lean":  "E75C0298168BD8CF09C673EC7DFCF4C5512FF917EA8C3D68E3671663B30DCA1E",
+                          "GrothendieckCounterexample.lean":  "C58E0D8CF549D9CBC1FCB751414703CDA2FF810520BF35106BE36A43B663A9CA",
+                          "GrothendieckCounterexampleAllPrimes.lean":  "46F4740DC29E8D95B01A5D0A046DE1F48061C3DFC03CF1D57EB111A0C284411E",
+                          "GrothendieckCounterexampleGist.lean":  "F270A7CDDE55D6E7769CC12337DA94E15295D8638208BCAB762BC65EC7EDEB3E"
+                      },
+    "lean":  {
+                 "built":  true,
+                 "layout":  "flat",
+                 "module":  "GrothendieckCounterexample",
+                 "axioms_report":  "pinned_report.txt",
+                 "driver":  "axioms_report.lean",
+                 "axioms_report_sha256":  "D712D4B650DC9E3138BE4779A1AD0122AB01FAAD41B66913A07902EEE27D0D09"
+             },
+    "macaulay2":  {
+                      "ok":  false
+                  }
+}
