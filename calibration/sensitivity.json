@@ -1,0 +1,46 @@
+{
+ "real": {
+  "active": {
+   "cap": 3.2,
+   "false_quarantines": 1,
+   "rate": 0.0089
+  },
+  "max": {
+   "cap": 3.6839,
+   "false_quarantines": 0,
+   "rate": 0.0
+  },
+  "p95": {
+   "cap": 2.8868,
+   "false_quarantines": 5,
+   "rate": 0.0446
+  },
+  "p99": {
+   "cap": 3.124,
+   "false_quarantines": 1,
+   "rate": 0.0089
+  }
+ },
+ "sim": {
+  "active": {
+   "cap": 1.5,
+   "false_quarantines": 0,
+   "rate": 0.0
+  },
+  "max": {
+   "cap": 1.0,
+   "false_quarantines": 0,
+   "rate": 0.0
+  },
+  "p95": {
+   "cap": 1.0,
+   "false_quarantines": 0,
+   "rate": 0.0
+  },
+  "p99": {
+   "cap": 1.0,
+   "false_quarantines": 0,
+   "rate": 0.0
+  }
+ }
+}

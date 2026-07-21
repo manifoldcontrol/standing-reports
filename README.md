@@ -1,4 +1,4 @@
-# standing-reports
+﻿# standing-reports
 
 Audits of machine-generated mathematics, published with the evidence that
 produced them. Each report states what a body of formal work supports,
@@ -28,6 +28,10 @@ whether a formal statement expresses the informal claim or whether an
 outside expert has reviewed the work, close only from an attributed
 attestation whose full text is hashed into the record. Anything else
 stays open, and the verdict lists it.
+
+## calibration data
+
+The retention thresholds (step-label entropy cap, closeness floor) are part of the effective verification policy. [calibration/](calibration/) publishes every observation behind them, sensitivity at p95/p99/max, a malformation evaluation of both metrics, and the full quarantine ledger. `python3 calibration/recompute.py` re-derives the tables from the observations.
 
 ## glossary
 

@@ -1,0 +1,77 @@
+[
+ {
+  "reason": "accepted but trace thresholds failed: dependency_drift",
+  "source": "run14_kimik3.events.jsonl",
+  "theorem_id": "chain_coop_floor"
+ },
+ {
+  "reason": "kernel-accepted but the term rests on extra axioms: ['Classical.choice', 'Quot.sound', 'propext', 'rsmca_f257_pow16_card._native.native_decide.ax_1']",
+  "source": "run17_f257.events.jsonl",
+  "theorem_id": "rsmca_f257_pow16_card"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "fr_odd_sq"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "fr_exists_prime_above"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "fr_sum_odd_sq"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "fr_gauss_sum"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "fr_amgm_two"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "rsmca_f17_pow4_card"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "rsmca_f17_psi2_card"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "rsmca_f17_two_square_cover"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "rsmca_f257_pow16_card"
+ },
+ {
+  "reason": "accepted but trace thresholds failed: logical_closeness,dangling_node_count",
+  "source": "run8.events.jsonl",
+  "theorem_id": "rsmca_dither_active_scale"
+ },
+ {
+  "reason": "REVOKED: pre-E45 retention: kernel-transitive closure carries a native_decide minted axiom; fails the axiom-cleanliness conjunct (E54). Found by test_retained_artifacts 2026-07-20.",
+  "source": "run11_dsv4.retained",
+  "theorem_id": "rsmca_f17_two_square_cover"
+ },
+ {
+  "reason": "REVOKED: pre-E45 retention: kernel-transitive closure carries a native_decide minted axiom; fails the axiom-cleanliness conjunct (E54). Found by test_retained_artifacts 2026-07-20.",
+  "source": "run11_dsv4.retained",
+  "theorem_id": "rsmca_f17_pow4_card"
+ },
+ {
+  "reason": "REVOKED: pre-E45 retention: kernel-transitive closure carries a native_decide minted axiom; fails the axiom-cleanliness conjunct (E54). Found by test_retained_artifacts 2026-07-20.",
+  "source": "run11_dsv4.retained",
+  "theorem_id": "rsmca_f17_psi2_card"
+ }
+]

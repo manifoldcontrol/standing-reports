@@ -1,0 +1,37 @@
+{
+ "basis": "synthetic proof-term-scale DAGs (full real DAGs are not persisted; real-trace perturbation requires that, a named gap)",
+ "classes": {
+  "edge_drop_30": {
+   "caught": 200,
+   "entropy_max": 2.617,
+   "entropy_median": 2.3422,
+   "n": 200,
+   "recall": 1.0
+  },
+  "label_collapse": {
+   "caught": 0,
+   "entropy_max": 0.0,
+   "entropy_median": 0.0,
+   "n": 200,
+   "recall": 0.0
+  },
+  "label_shuffle_uniform": {
+   "caught": 167,
+   "entropy_max": 5.2891,
+   "entropy_median": 4.263,
+   "n": 200,
+   "recall": 0.835
+  }
+ },
+ "clean": {
+  "false_quarantines": 0,
+  "n": 200,
+  "rate": 0.0
+ },
+ "detector": "v4 real thresholds",
+ "pooled": {
+  "precision": 1.0,
+  "recall": 0.6117
+ },
+ "seed": 1783901719
+}

@@ -1,0 +1,40 @@
+{
+ "real": {
+  "active_thresholds": {
+   "entropy_cap": 3.2,
+   "min_closeness": 0.8
+  },
+  "logical_closeness": {
+   "median": 1.0,
+   "min": 1.0,
+   "p05": 1.0
+  },
+  "n_accepts": 112,
+  "step_label_entropy": {
+   "max": 3.6839,
+   "median": 2.2746,
+   "p75": 2.5339,
+   "p95": 2.8868,
+   "p99": 3.124
+  }
+ },
+ "sim": {
+  "active_thresholds": {
+   "entropy_cap": 1.5,
+   "min_closeness": 0.8
+  },
+  "logical_closeness": {
+   "median": 1.0,
+   "min": 1.0,
+   "p05": 1.0
+  },
+  "n_accepts": 47,
+  "step_label_entropy": {
+   "max": 1.0,
+   "median": 0.0,
+   "p75": 0.9183,
+   "p95": 1.0,
+   "p99": 1.0
+  }
+ }
+}
