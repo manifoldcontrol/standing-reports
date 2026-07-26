@@ -1,0 +1,83 @@
+{
+  "commit": "4bff865a14c2cd61fefbffbe9c49cbfc5a89ac45",
+  "toolchain_id": "leanprover/lean4:v4.27.0",
+  "mathlib_revision": "a3a10db0e9d66acbebf76c5e6a135066525ac900",
+  "lake_manifest_hash": "5B99B5F4F807CBBA67BBCD22E5E486C17D6A8D970EA218DE08D05830AB350C26",
+  "source_hashes": {
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture1.lean": "4104BD98EF2BDE8B37AF597801B1EDBFDF086A52236AF3DEF6DA5C8D3E890EB2",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean": "D22C22ACD3B0BFC4A5EE0B5DAD71AEAB3DABFF5EB85182175FE59BAEEEE84E3D",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture101.lean": "58DDC8BB5D824672CB12B21F1F2F8BD187B9F8D13EA29560314687B4CE656B9C",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture103.lean": "99D719C9D23678DA334CA4A2F06669DEF0AE0FAB55F3AF64FCB493CBC08CB1D3",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture109.lean": "42D67CE65FAA730DE6EFBBEC1DAF77DCBB82917FC91031E667ADC0118FEEE685",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture13.lean": "7A4D4DAADF5030E1CBFD4E865589C7F3CF19F0515328E96E40F19E918D0CB606",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture133.lean": "066FF76F4171C5FDF84FCBFD411B50A2D49E0BABD90262702DC0F0B0FCCBCD14",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean": "824802C70A0C8DBF5FD08361E37F7318272AD74F1901C99D74E76EC689602BB0",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture142.lean": "0A30D2C8815A994BFCFA50890ED4C68F0FA9542580BD0D2B3513D5A05DBC6CE6",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture143.lean": "67F574A6941204B3D0388A6E2D01CFFF9C7DC240077E2971D6BE90063A8C8E7F",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture144.lean": "16FBC17574EAC36F8484364AF011A4AE74324FC40E11DF3E4C739803642CEC30",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture145.lean": "0049C6A65A37749359182AD9C2031EA9652B90D0DF02FA1A7415DDD380779AB4",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean": "43680A91AB3B16D448714569F86E93E4747C69B69443EB36E12156CA11234AEF",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture16.lean": "1DD4EC26FE2445369C41F612B18AC3F7D7DF3CD1ECD99C4C260C3AB5BD7BCB53",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture160.lean": "AAC759966906A1246C44C5BEE5E8A2667F3E7C38F93479DFA5E12694D9CBB470",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture17.lean": "D3FE1B78B4BB77C47E09B0143BE8DB2402CC808AA9505A3F4BFCB4C061A576AB",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture18.lean": "3EEAC24BDF42AF2E5F8B00C3FAC566D919B599F6E45305F5B5C841FEAA47C4C1",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture19.lean": "4A8A238226EE8A4F1BAA7617FB5E62026639F0B8084FC296016AA4F65CBD5A83",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture194.lean": "294ACA601F0C4A1F1C207420B71B0E934C9D291874842EE7797395ADB2C5EC9C",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture198a.lean": "E7A6C47539B82296A4C023B79750A91FD9AA3CA26F3E83C23F9CE5F4C12230C5",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture2.lean": "26D276D70DC3F111C6A043F89A1EB329B051C090FEB0E909BA0AB35207E29107",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture20.lean": "5EBC7A42619C1799A466E69B219382B82916380FBB3EE5DE4DDC10422B0A9147",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture200.lean": "7F33659259A12784FAC295C6DBE583646E117451E1E9F884C13C82FB450B1DAD",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture217.lean": "242377E83EEB3EE88DDF9EC0C1B11E91E6B46A94090EDA4427759C21809FC416",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture23.lean": "8CB4CB0CD435384D6A7BC864EEE72C2D4CE31D31C09D400FD7EE566F65276953",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture291.lean": "FD6BE6863CAC9B365DCDD57C173D1391FB5D91C26E95B3D1BF5BE58AA804B658",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture3.lean": "734A421574D66D9067B8D6B074EA554526E017DF1D1F43BF112349265F55275C",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture31.lean": "3911B7C94BE913A18B5B5A92EFCD3A9A3425AB98A00F31461B965EB470279C02",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture314.lean": "549BB19489B538B413CB1A642BE97C786132E497BB32F9A23B736E3701BFDBCD",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean": "F4FFDF46BC85F4A68570309F54E39B013EA6514073AAB79E6B1B3EF27456FBD6",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture316.lean": "F5556541EA238511069B43E5F9424549B5CB151ACCA5BBFD0DE89A9FC7B9DAF6",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture32.lean": "2B4552A49ADCCAAD33A262347C08BB7D2CE05EA8295442F9FB147DB3FD0B48AA",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture322.lean": "E8BD35A3A2748A31106FCA840E82377A5C19ACF2E0264B9DE73EAD4FFB91963B",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture327.lean": "25047CA6BAC97212591245A6574887C26C4DDF15375F72BE6845153664C78C54",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture33.lean": "F80098AF5AB1D3A01F2AAE93E999D642919F806439E4B14EB584AA71EC7C6E63",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture34.lean": "5FDBA0A252C8F47F81550A9B65F955DC4288A6C9E6E8EE94406D6A28A3B4BA54",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture36.lean": "D4075D9504DEA06C5A8786957C2BF9FC079C33B83EC347ECD8CF30400303A784",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture4.lean": "29BECE2C60CC37B04AC56EABAA885777620A3D12796E019BFED72C1D317DB44E",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture40.lean": "840655F277F615381A3086785A43D607422D5C8BA8E1D510419A669DB64EE0D4",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture5.lean": "E1DF6AE973245EC3B3DC9CFE6C9FF5020AB87BAD833DFD5B0D37545B71D9B768",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture58.lean": "60EB72947BB8AD04613560678056A17262C8521254327678FB6213A3AEBE2837",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture59.lean": "2CCF9A5871FD561E912B2382473268390157285D7206EE5304B70370B5E90DF6",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture6.lean": "4C19E0371ECF66B7485BC92FDF00CF58790678774E948CD6ED8426917B0008EC",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture61.lean": "5F745A5B0B211DB7C2895FAB67D8CF2109361362E58E1261F60A3741480797B1",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture65.lean": "EAA534FEB57C772671B450154B9A27B5C1131F386AF2162E6A6D2AD3F1FC9BD2",
+    "FormalConjectures/WrittenOnTheWallII/GraphConjecture7.lean": "0961A20D4A07AF4A2DA4C81769CAA380F7501EA0EEA2E5E3EBA3A0B806CF5A1F",
+    "FormalConjectures/WrittenOnTheWallII/Proofs/GraphConjecture194.lean": "B7ED7FF35E0DD24649B1F2F89D32861B265AD776A165D4E613E08D19580CE803",
+    "FormalConjectures/WrittenOnTheWallII/Test.lean": "6E61DB9734361C9EE96718647C949482EE5F69B030354899496A6BD8BC0C5EDF"
+  },
+  "lean": {
+    "built": true,
+    "axioms_report": "wowii_report.txt",
+    "axioms_report_sha256": "2BCDF0970D203AE97AADB65FFD3869B19E472F2741D09317288A2E6C178CA265",
+    "driver": "axioms_wowii.lean"
+  },
+  "upstream": {
+    "repo": "https://github.com/google-deepmind/formal-conjectures",
+    "pr": 4542,
+    "pr_head_commit": "89599cb879ea6027105d94323d3cefcc1e8d7136",
+    "statement_file": "FormalConjectures/WrittenOnTheWallII/GraphConjecture194.lean",
+    "statement_sha256": "0848F63DEC7044D9CFB8020963E361FF886A5F5E5F18371EAF83834536C54725"
+  },
+  "attestations": [
+    {
+      "obligation": "statement_adequacy",
+      "checker": "claude-audit",
+      "checker_class": "ai_reviewer",
+      "checker_lineage": [
+        "claude"
+      ],
+      "shared_context": [
+        "formal-conjectures-pr4542"
+      ],
+      "statement": "Semantic adequacy review, fork commit 4bff865a, performed 2026-07-23 (full text: wowii_pilot/ADEQUACY_REVIEW.md). Reviewer lineage claude, disjoint from the subject's disclosed lineage (gpt-5.6-thinking, codex). METHOD: full read of the pinned source; comparison against the upstream open-form statement and the PR-head statement recorded in this manifest's upstream block; independent re-derivation of every numeric docstring claim. VERIFIED: the 18-vertex fromRel construction matches the described clique-11 + four-apex + three-leaf graph; independence number 4 ({13,15,16,17}, no 5th); neighborhood-independence sum 54 = 44+7+3 and average 3; hypothesis holds with equality (4 <= 1+3); leaf_is_endpoint is decision-procedure-free walk combinatorics and three leaves against two path endpoints falsify the conclusion; conjecture194 internalizes the upstream statement under answer(False) in the repository's solved-conjecture pattern. NOTED (refutation-safe): the internalized universal ranges over Type where upstream's open form ranges over Type*; refuting the Type-0 universal refutes the wider statement a fortiori, and finite graphs lose no generality at Type 0. RESIDUALS: catalogue-level fidelity of the repository's rendering is out of scope (subject is the PR against the repository's formalization; the catalogue URL did not resolve); the native_decide trust-base finding is the verdict's, not adequacy's. VERDICT: statements adequately express the mapped obligations as scoped by claimmap_efe00e7e1369."
+    }
+  ]
+}

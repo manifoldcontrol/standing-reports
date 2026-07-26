@@ -40,6 +40,11 @@ ATTESTED_CLASSES = frozenset({"semantic_adequacy", "literature_review",
                               "independent_expert_review"})
 
 _AXIOM_LINE = re.compile(r"'([\w.]+)'\s+depends on axioms\s*:\s*\[([^\]]*)\]")
+# The kernel's OTHER phrasing: an axiom-free declaration. Missing this pattern
+# made the best possible evidence (a fully constructive proof) parse as an
+# absent declaration and refuse closure (E55; the fail direction was closed,
+# but the verdict named a theorem "missing" that is present and clean).
+_NO_AXIOM_LINE = re.compile(r"'([\w.]+)'\s+does not depend on any axioms")
 
 
 def validate_commit_hash(value):
@@ -50,13 +55,20 @@ def validate_commit_hash(value):
 def parse_axiom_report(text):
     """Raw `#print axioms` output -> {short_decl: frozenset(axioms)}.
 
+    Both kernel phrasings are parsed: `'X' depends on axioms : [...]` and
+    `'X' does not depend on any axioms` (the axiom-FREE case, empty set).
     Whitespace is normalised first: the kernel wraps long axiom lists across
     lines. Keyed by the final name component, so namespace layout differences
-    between commits do not break matching.
+    between commits do not break matching. On a short-name collision the
+    axiom-list form wins: an unclean reading can never be masked by an
+    axiom-free line (fail-closed, E55).
     """
     flat = re.sub(r"\s+", " ", text or "")
-    return {name.split(".")[-1]: frozenset(a.strip() for a in axioms.split(",") if a.strip())
-            for name, axioms in _AXIOM_LINE.findall(flat)}
+    out = {name.split(".")[-1]: frozenset(a.strip() for a in axioms.split(",") if a.strip())
+           for name, axioms in _AXIOM_LINE.findall(flat)}
+    for name in _NO_AXIOM_LINE.findall(flat):
+        out.setdefault(name.split(".")[-1], frozenset())
+    return out
 
 
 @dataclass

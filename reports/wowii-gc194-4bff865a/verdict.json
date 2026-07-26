@@ -1,0 +1,100 @@
+{
+  "project": "wowii-graph-conjecture-194",
+  "claim_map_id": "claimmap_efe00e7e1369",
+  "commit": "4bff865a14c2cd61fefbffbe9c49cbfc5a89ac45",
+  "snapshot_id": "snap_97a7cc784a2a",
+  "evidence_origin": "extracted",
+  "policy_id": "policy_08a0946eaffe",
+  "standing": null,
+  "claims": {
+    "counterexample_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "certificate_object",
+        "conclusion_falsified",
+        "hypothesis_satisfied"
+      ],
+      "evidence_classes": [
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    },
+    "refutation_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "certificate_object",
+        "conclusion_falsified",
+        "hypothesis_satisfied",
+        "refutation_assembled"
+      ],
+      "evidence_classes": [
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    },
+    "external_validation_claim": {
+      "complete": false,
+      "missing_obligations": [
+        "certificate_object",
+        "conclusion_falsified",
+        "external_expert_review",
+        "hypothesis_satisfied",
+        "refutation_assembled"
+      ],
+      "evidence_classes": [
+        "release_replay",
+        "semantic_adequacy"
+      ]
+    }
+  },
+  "independence": {
+    "execution_paths": 0,
+    "external_expert_paths": 0,
+    "correlated_ai_groups": 0
+  },
+  "flags": [
+    "external_validation_boundary_open"
+  ],
+  "declarations_observed": [
+    "conjecture194",
+    "counterexample",
+    "counterexample_average_indep_neighbors",
+    "counterexample_connected",
+    "counterexample_indep_num",
+    "counterexample_local_indep_sum",
+    "counterexample_no_hamiltonian_path"
+  ],
+  "kernel_closure": {
+    "certificate_object": {
+      "closed": false,
+      "missing_declarations": [],
+      "unclean_declarations": [
+        "counterexample_connected"
+      ]
+    },
+    "conclusion_falsified": {
+      "closed": false,
+      "missing_declarations": [],
+      "unclean_declarations": [
+        "counterexample_no_hamiltonian_path"
+      ]
+    },
+    "hypothesis_satisfied": {
+      "closed": false,
+      "missing_declarations": [],
+      "unclean_declarations": [
+        "counterexample_average_indep_neighbors",
+        "counterexample_indep_num",
+        "counterexample_local_indep_sum"
+      ]
+    },
+    "refutation_assembled": {
+      "closed": false,
+      "missing_declarations": [],
+      "unclean_declarations": [
+        "conjecture194"
+      ]
+    }
+  },
+  "axioms_report_hash": "sha256:f0069a5c8b5c5c425aadd737b583e067183997a8f71a4d49470f294ea9070eb9"
+}

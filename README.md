@@ -65,6 +65,8 @@ The retention thresholds (step-label entropy cap, closeness floor) are part of t
 | [grothendieck-rank-four](reports/grothendieck-rank-four-94d662fe/REPORT.md) | `94d662fe` | release_verified | 14/14 declarations axiom-clean; the reviewer shares the subject's lineage and is flagged as correlated |
 | [rs-mca slackMCA_v4](reports/rs-mca-slackmca-v4-3404d21b/REPORT.md) | `3404d21b` | release_verified | 14/14 declarations axiom-clean; reviewer lineage distinct from the subject's |
 | [BH FDR certificate](reports/bh-fdr-certificate-2607.12208/REPORT.md) | `arXiv:2607.12208` | replicated | re-implementation reproduces the certified total digit-for-digit by exact fraction arithmetic |
+| [wowii-gc194](reports/wowii-gc194-4bff865a/REPORT.md) | `4bff865a` | null | six theorems rest on native_decide's compiler-trust axioms; inventory named; adequacy recorded (uncorrelated lineage) |
+| [wowii-gc194 (compiler-trust basis)](reports/wowii-gc194-4bff865a-compilertrust/REPORT.md) | `4bff865a` | release_verified_compiler_trust | same evidence under the enumerated wider basis; the label carries the basis |
 
 No report carries `externally_validated`. No human expert review is on
 record for any of these subjects, and the policy requires one.

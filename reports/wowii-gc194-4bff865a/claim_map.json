@@ -1,0 +1,88 @@
+{
+  "map_id": "claimmap_efe00e7e1369",
+  "project": "wowii-graph-conjecture-194",
+  "authors": [
+    "gpt-5.6-thinking",
+    "codex"
+  ],
+  "obligations": {
+    "certificate_object": [
+      "lean_kernel",
+      "required"
+    ],
+    "hypothesis_satisfied": [
+      "lean_kernel",
+      "required"
+    ],
+    "conclusion_falsified": [
+      "lean_kernel",
+      "required"
+    ],
+    "refutation_assembled": [
+      "lean_kernel",
+      "required"
+    ],
+    "statement_adequacy": [
+      "semantic_adequacy",
+      "required"
+    ],
+    "release_replay": [
+      "release_replay",
+      "required"
+    ],
+    "external_expert_review": [
+      "independent_expert_review",
+      "required"
+    ]
+  },
+  "claims": {
+    "counterexample_claim": [
+      "certificate_object",
+      "hypothesis_satisfied",
+      "conclusion_falsified",
+      "statement_adequacy",
+      "release_replay"
+    ],
+    "refutation_claim": [
+      "counterexample_claim",
+      "refutation_assembled"
+    ],
+    "external_validation_claim": [
+      "refutation_claim",
+      "external_expert_review"
+    ]
+  },
+  "claim_order": [
+    "counterexample_claim",
+    "refutation_claim",
+    "external_validation_claim"
+  ],
+  "claim_standing": {
+    "counterexample_claim": "release_verified",
+    "refutation_claim": "release_verified",
+    "external_validation_claim": "externally_validated"
+  },
+  "decl_obligations": {
+    "certificate_object": [
+      "counterexample",
+      "counterexample_connected"
+    ],
+    "hypothesis_satisfied": [
+      "counterexample_indep_num",
+      "counterexample_local_indep_sum",
+      "counterexample_average_indep_neighbors"
+    ],
+    "conclusion_falsified": [
+      "counterexample_no_hamiltonian_path"
+    ],
+    "refutation_assembled": [
+      "conjecture194"
+    ]
+  },
+  "kernel_source_suffix": "WrittenOnTheWallII/GraphConjecture194.lean",
+  "clean_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}
